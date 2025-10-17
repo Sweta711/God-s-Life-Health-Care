@@ -1,9 +1,13 @@
 // ====== HAMBURGER MENU ======
-const hamIcon = document.querySelector('.ham-icon');
-const navBar = document.querySelector('.nav-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamIcon = document.querySelector('.ham-icon');
+  const navBar = document.querySelector('.nav-menu');
 
-hamIcon.addEventListener('click', () => {
-navBar.classList.toggle("active");
+  if (hamIcon && navBar) {
+    hamIcon.addEventListener('click', () => {
+      navBar.classList.toggle("active");
+    });
+  }
 });
 
 // ====== SEARCH FUNCTIONALITY ======
